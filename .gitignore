@@ -1,1 +1,9 @@
-venv
+# Ignorar directorio de entorno virtual
+venv/
+
+# Ignorar archivos generados por venv
+.Python
+bin/
+lib/
+include/
+lib64/
