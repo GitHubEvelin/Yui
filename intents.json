@@ -1,84 +1,303 @@
 {
   "intents": [
     {
-      "tag": "greeting",
+      "tag": "saludo",
       "patterns": [
-        "Hi",
+        "Hola",
         "Hey",
-        "How are you",
-        "Is anyone there?",
+        "Como estas?",
+        "Hay alguien ahi?",
+        "Buen dia",
+        "Que tal?",
+        "Hola de nuevo",
+        "ola",
+        "Hol",
         "Hello",
-        "Good day"
+        "Holis"
       ],
       "responses": [
-        "Hey :-)",
-        "Hello, thanks for visiting",
-        "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
+        "Hola Humano :), como puedo ayudarte? solo escribe algo como: necesito ayuda, me siento triste",
+        "Hola, gracias por estar aqui. Puedes enviarme como te sientes. Algo como: me siento triste, estoy enojado",
+        "Hola, que puedo hacer por ti?. Si necesitas ayuda dime: Me siento triste, tengo miedo",
+        "Hola, como puedo ayudarte?. Brindame informacion como: me siento mal o estoy feliz",
+        "Hola, soy Yui, Como te sientes hoy?, Puedes indicarmelo con: me siento triste, estoy enojado",
+        "Hola, Como puedo ayudarte hoy?, solo escribe: me siento mal o estoy feliz"
       ]
     },
     {
-      "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
+      "tag": "adios",
+      "patterns": ["Adios",
+       "Nos vemos", 
+       "Hasta luego",
+       "Hata pronto",
+       "Nos vemos mas tarde"
+      ],
       "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
+        "Hasta pronto humano :)",
+        "Que tengas un lindo dia",
+        "Adios ! Vuelve pronto",
+        "Hasta la proxima! siempre estoy aqui si necesitas algo",
+        "Nos vemos mas tarde. Que tengas un buen dia."
+        
       ]
     },
     {
-      "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      "tag": "Gracias",
+      "patterns": ["Gracias",
+       "Muchas Gracias",
+        "Te agradezco mucho", 
+        "Gracias de corazon",
+         "Te estoy agradecido",
+         "No sé qué haría sin ti"
+        ],
+      "responses": [
+        "Feliz de poder ayudarte!",
+       "De nada Humano!", 
+      "No fue nada",
+       "Estoy aqui para ayudarte siempre que lo necesites",
+       "Es un placer poder ayudar. Estoy aqui siempre que me necesites.",
+       "Gracias por tus palabras! Siempre estare aqui para apoyarte."
+      ]
     },
     {
       "tag": "items",
       "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
+        "Quien eres?",
+        "Como puedes ayudarme?",
+        "Eres humano?",
+        "Como funcionas?",
+        "Que eres?",
+        "Que es un chatbot"
       ],
       "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
+        "Soy Yui, tu acompañante emocional, estas en un lugar seguro puedes confiar en mi",
+        "Mi nombre es Yui, un Bot de apoyo emocional y te ayudare en lo que necesites",
+        "Soy Yui, tu amigo virtual y apoyo emocional. En que puedo ayudarte hoy?",
+        "Soy un producto de alta tecnologia diseñado para brindar apoyo emocional. En que puedo ayudarte hoy?"
       ]
     },
     {
-      "tag": "payments",
+      "tag": "tristeza",
       "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
+        "No me siento bien",
+        "Me siento triste",
+        "Me siento solo",
+        "No me siento bien conmigo mismo",
+        "Necesito hablar con alguien",
+        "Me siento triste",
+        "No se porque me siento asi",
+        "triste"
+
       ],
       "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
+        "Entiendo, tengo una manera de ayudarte, ves el boton a la izquierda, presionalo y veras como puede ayudarte",
+        "Estoy contigo en esto, y espero que todo pueda mejorar pronto",
+        "A veces, las emociones pueden ser confusas, pero no es del todo malo.Solo necesitas un tiempo para ti.Te puedo ayudar a relajarte con mis tecnicas de relajacion, solo presiona el boton",
+        "La tristeza es una emocion normal, esta bien sentirlo solo intenta que no sea tan seguido"
+      ]
+    }, 
+    {
+      "tag": "ansiedad",
+      "patterns": [
+        "Siento mucha ansiedad",
+        "No se controlar mi ansiedad",
+        "Creo que tengo ansiedad",
+        "Siento que mi ansiedad esta fuera de control",
+        "Tengo ganas de golpear todo"
+      ],
+      "responses": [
+        "Gracias por compartirlo conmigo, no te preocupes podemos superarlo. Solo te pido que pienses en cosas que te hacen feliz",
+        "Comprendo lo dificil que esto, necesito que Inhales y exhales, repitele 3 veces. Si no te ayuda ve a mis tecnicas de relajacion",
+        "Entiendo lo difícil que puede ser. Necesito que relajes tu cuerpo y repite: estoy bien, las veces que creas necesarias"
       ]
     },
     {
-      "tag": "delivery",
+      "tag": "Felicidad",
       "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
+        "Estoy feliz", 
+        "Hoy fue un buen día",
+         "Me siento contento"
       ],
       "responses": [
-        "Delivery takes 2-4 days",
-        "Shipping takes 2-4 days"
+        "Me alegra escuchar eso! Cuentame más sobre lo que te hace feliz.",
+        "Es maravilloso escuchar que estás feliz. La felicidad es un sentimiento especial.",
+        "La felicidad es una sensación maravillosa. Siempre estoy aquí para compartir momentos felices contigo.",
+        "La felicidad es un regalo especial en la vida. Siempre celebra esos momentos felices.",
+        "La felicidad es un regalo especial que todos merecemos sentir.",
+        "¡Qué bueno que estás feliz! La alegría es contagiosa."
       ]
     },
     {
-      "tag": "funny",
+      "tag": "Miedo",
       "patterns": [
-        "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
+        "Tengo miedo", "Me asusta la oscuridad", "Tengo pesadillas"
       ],
       "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
+        "Entiendo tus miedos. Es normal tener miedo, respira profundo te ayudara a tranquilizarte",
+        "Sentir miedo es normal a veces. Puedes hablar conmigo sobre lo que te preocupa cuando quieras.",
+        "El miedo es una emoción natural. Estoy aquí para ayudarte a enfrentarlo.",
+        "El miedo es una emoción natural, y está bien sentirlo de vez en cuando."
+      ]
+    },
+    {
+      "tag": "Amistad",
+      "patterns": [
+        "Tengo un nuevo amigo", "Me peleé con mi amigo", "Extraño a mi amigo"
+      ],
+      "responses": [
+        "La amistad es importante. Recuerda que las peleas no son la solucion, intenta solucionarlo hablando",
+        "Las amistades son valiosas. Puedes hablar conmigo sobre tus amigos cuando quieras.",
+        "La amistad es un tesoro. Estoy aqui para escuchar tus experiencias y pensamientos sobre tus amigos.",
+        "La amistad es un tesoro. Valorar a tus amigos es importante.",
+        "Los amigos son como tesoros. Siempre puedes contar con ellos.",
+        "Las amistades son valiosas y hacen que la vida sea mas hermosa."
+      ]
+    },
+    {
+      "tag": "Escuela",
+      "patterns": [
+        "No me gusta la escuela", "Tengo problemas en la escuela", "Me siento abrumado por la tarea"
+      ],
+      "responses": [
+        "La escuela puede ser desafiante a veces, pero no lo es para siempre.",
+        "La escuela puede ser desafiante, pero juntos podemos encontrar formas de superar esos desafios.",
+        "La escuela puede ser un lugar para aprender y crecer. Juntos podemos abordar cualquier desafio.",
+        "No te preocupes, encontraras una motivacion para que todo sea maas facil.",
+        "La escuela puede ser un desafio, pero tambien es una oportunidad para aprender y crecer."
+
+        
+      ]
+    },
+    {
+      "tag": "Creatividad",
+      "patterns": [
+        "Quiero dibujar", "Me gusta escribir historias", "Quiero hacer manualidades", "me gusta dibujar",
+        "Me encanta cantar", "quiero cantar", "Me gusta bailar"
+      ],
+      "responses": [
+        "La creatividad es genial. Disfruta de hacer estas actividades",
+        "La creatividad es una forma hermosa de expresión. Si tienes algo creativo muestralo a los demas.",
+        "La creatividad es una forma hermosa de expresarte. Sigue explorando tu creatividad!",
+        "La creatividad es una expresión hermosa de uno mismo. Sigue siendo creativo!",
+        "Explorar tu creatividad es una manera maravillosa de expresarte."
+        
+      ]
+    },
+    {
+      "tag": "Preguntas sobre emociones",
+      "patterns": [
+        "Qué son las emociones?"
+      ],
+      "responses": [
+        "Las emociones son normales. Estoy aqui para ayudarte a entenderlas y manejarlas.",
+        "Las emociones son normales y pueden ser confusas a veces.",
+        "Entender nuestras emociones es un paso importante. Estoy aqui para ayudarte a comprenderlas mejor.",
+        "Entender tus emociones es un viaje importante en la vida. Estoy aqui para acompañarte.",
+        "Las emociones son como colores en una paleta, cada una tiene su importancia.",
+        "Entender nuestras emociones es un viaje emocionante de autodescubrimiento."
+      ]
+    },
+    {
+      "tag": "Chistes",
+      "patterns": [
+        "tienes chistes?", "cuentame un chiste", "hazme reir", "Dime un chiste", "cuentame otro"
+      ],
+      "responses": [
+        "Habia una vez un hombre tan pequeño que se subio encima de una canica y dijo ¡El mundo es mio!",
+        "Pedrito, que planeta va despues de Marte? - Miercoles",
+        "Mama, en el colegio me llaman distraido. -Juanito, tu vives en la casa de enfrente",
+        "Claro!, aqui tienes un chiste! Por que el libro de matematicas se siente triste? Porque tiene demasiados problemas.",
+        "Claro, aqui tienes un chiste: ¿Qué hace una abeja en el gimnasio? Zum-ba!",
+        "Aqui va otro chiste: Como se dice pañuelo en japones? Saka-moko."
+      ]
+    },
+    {
+      "tag": "Depresion",
+      "patterns": [
+        "Me siento deprimido", 
+        "No puedo superar la tristeza", 
+        "Estoy atrapado en la depresion", 
+        "Que hago cuando estoy deprimido?"
+      ],
+      "responses": [
+        "La depresion puede ser abrumadora. Estoy aqui para apoyarte.",
+        "Hablar sobre tus sentimientos de depresión es un paso valiente. Necesito que busques a alguien de confianza para decirle sobre ello",
+        "La depresion es una lucha, pero no estás solo en esto.",
+       "Puede ser util hablar sobre lo que sientes, puedes iniciar hablando con alguien de confianza",
+       "La depresion es un desafío, pero hay formas de abordarla. Puedes usar una de mis tecnicas de relajacion que te ofrezco, te aseguro que ayudaran"
+       
+      ]
+    },
+    {
+      "tag": "Enojo",
+      "patterns": [
+        "Estoy enojado",
+         "No puedo controlar mi enojo",
+         "Me siento frustrado", 
+         "Cómo manejar el enojo?", 
+         "Quiero hablar sobre mi enojo"
+      ],
+      "responses": [
+        "El enojo es una emocion poderosa y puede causar a daños a nosotros mismos y a otras personas. Inhala y Exhala, tres veces",
+        "A veces, expresar nuestras emociones ayuda a aliviarlas. Compartelas con alguien de confianza",
+        "El enojo es una señal de que algo no está bien. Necesito que cierres los ojos y que pienses en lo que mas te ha hecho feliz",
+        "El manejo del enojo es importante. Te gustaría aprender algunas tecnicas para controlarlo?. Haz clic en el boton morado",
+        "Recuerda que esta bien sentir enojo a veces. Estoy aqui para escucharte y ofrecerte apoyo."
+       
+      ]
+    },
+    {
+      "tag": "Estres",
+      "patterns": [
+        "Me siento estresado", "El estres me abruma", "Necesito aliviar el estrés" ,
+        "Me duele la cabeza", "Tengo demasiada tarea", "No puedo realizar una tarea"
+      ],
+      "responses": [
+        "El estres es algo que todos enfrentamos.",
+        "Hablemos sobre tus fuentes de estres. A veces, hablar al respecto puede aliviar la presion.",
+        "El manejo del estres es importante para tu bienestar. Si necesitas relajarte, te ofrezco mis tecnicas de relajacion, solo presiona el boton",
+        "Algunas tareas pueden ser muy dificiles, pero recuerda que a veces necesitamos ayuda para hacerla, no es malo pedir ayuda",
+        "El autocuidado es clave para reducir el estres. Revisa mis tecnicas de relajacion, solo haz clic en el boton"
+      ]
+    },
+    {
+      "tag": "ayuda",
+      "patterns": [
+        "Necesito ayuda", "Puedes ayudarme", "Necesito hablar", "Como puedes ayudarme?", "Que puedes hacer por mi"
+      ],
+      "responses": [
+        "De acuerdo, necesito que me brindes mas informacion como: me siento triste, me siento solo, estoy feliz",
+        "Claro, con gusto puedo ayudarte. Para hacerlo necesito que envies algo como: me siento triste, estoy enojado",
+        "Si!, pero para ello necesito que me envias algo como: me siento mal, no tengo amigos, quiero llorar",
+        "Claro! envia algo como: me siento triste, me siento enojado, estoy feliz"
+      ]
+    },
+    {
+      "tag": "entendimiento",
+      "patterns": [
+        "Entiendo", "comprendo", "de acuerdo", "ok", "esta bien", "si"
+      ],
+      "responses": [
+        "Genial, espero que te haya ayudado, si necesitas algo mas puedes escribirlo!",
+        "De acuerdo, sigo disponible si necesitas mas ayuda solo escribe: necesito ayuda",
+        "Excelente, gracias por compartir lo que sientes",
+        "Bueno, sigue adelante y nunca te rindas"
+      ]
+    },
+    {
+      "tag": "respuestas",
+      "patterns": [
+        "como lo soluciono", "que puedo hacer?", "que hago?", "no puedo",
+        "como?", "que?","y como lo hago?"
+      ],
+      "responses": [
+        "Puedes acudir a mis tecnicas de relajacion, solo haz clic en el boton de morado",
+        "Haz clic en el boton morado de la izquierda, te ayudara",
+        "Si necesitas mas ayuda, te recomiendo acudir a una persona de confianza",
+        "Puede que no haya sido de mucha ayuda lo recomendado, y esta bien. Te recomiendo buscar ayuda en alguien de confianza"
       ]
     }
+
+
   ]
 }

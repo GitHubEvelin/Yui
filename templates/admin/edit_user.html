@@ -1,0 +1,45 @@
+{% extends 'baseLogin.html' %}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9T9neNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+{% block title %}Editar Usuario{% endblock %}
+
+{% block customCSS %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style_edit.css') }}">
+{% endblock %}
+
+
+{% block body %}
+<h1>Editar Usuario</h1>
+<form method="post">
+  {{ form.hidden_tag() }} <!-- Incluye el token CSRF -->
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="username" name="username" value="{{ user.username }}" required>
+    <label for="username">Nombre de Usuario</label>
+  </div>
+  <div class="form-floating">
+    <input type="password" class="form-control" id="password" name="password" value="{{ user.password }}" required>
+    <label for="password">Contraseña</label>
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="administrator" name="administrator" {% if user.administrator %}checked{% endif %}>
+    <label class="form-check-label" for="administrator">Administrador</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+</form>
+
+<!-- Mueve el botón Logout a la esquina superior derecha -->
+<div class="container mt-4">
+  <div class="text-right btn-logout">
+    <a class="btn btn-secondary" href="{{ url_for('logout') }}">Salir</a>
+  </div>
+</div>
+
+<!-- Agrega un botón para regresar a la página de administrar usuarios -->
+<div class="container mt-4">
+  <a class="btn btn-primary" href="{{ url_for('admin_users') }}">Regresar a Administrar Usuarios</a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+{% endblock %}

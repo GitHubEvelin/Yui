@@ -1,0 +1,58 @@
+body {
+    background-color: #5B97A2; /* Fondo morado */
+    color: #FFFFFF; /* Texto blanco */
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 30%; /* 16:9 aspect ratio */
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.return-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+        /* Estilos para los botones */
+        .btn-primary {
+            background-color: #FF8D8E; /* Fondo naranja para botones primarios */
+            border-color: #FD66BC; /* Borde naranja para botones primarios */
+            color: #FFFFFF; /* Texto blanco para botones primarios */
+            margin: 5px; /* Espaciado entre botones */
+            text-decoration: none; /* Para quitar la decoración de enlace en el botón */
+            padding: 10px 20px; /* Agregar relleno para hacer el botón más grande */
+            border: 2px solid #FD66BC; /* Borde más visible para el botón */
+            border-radius: 5px; /* Bordes redondeados para el botón */
+            display: inline-block; /* Hacer que el botón se comporte como un bloque en línea */
+        }
+
+        /* Estilos en hover para botones */
+        .btn-primary:hover
+         {
+            background-color: #FDFAD9; /* Fondo amarillo en hover para botones */
+            border-color: #FDFAD9; /* Borde amarillo en hover para botones */
+            color: #5B97A2; /* Texto morado en hover para botones */
+        }
+
+        h1 {
+            color: #FFFFFF; /* Texto blanco */
+            font-family: Lucida Console, Monospace; /* Reemplaza 'FuenteDeseada' con la fuente que desees utilizar */
+            font-size: 36px; /* Tamaño de fuente */
+            text-transform: uppercase; /* Convierte el texto en mayúsculas */
+            letter-spacing: 2px; /* Espaciado entre letras */
+            text-align: center; /* Centra el texto horizontalmente */
+        }
+
+        p {
+            color: #FFFFFF; /* Texto blanco */
+            font-family: Courier New, Monospace; /* Reemplaza 'FuenteDeseada' con la fuente que desees utilizar */
+            font-size: 15px; /* Tamaño de fuente */
+            text-transform: uppercase; /* Convierte el texto en mayúsculas */
+            letter-spacing: 2px; /* Espaciado entre letras */
+            text-align: center; /* Centra el texto horizontalmente */
+        }

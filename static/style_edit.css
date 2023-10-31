@@ -1,0 +1,29 @@
+/* Estilos personalizados para la página de administración de usuarios */
+
+/* Alinea el contenido horizontalmente */
+body {
+    background-color: #5B97A2; /* Fondo morado */
+    color: #FFFFFF; /* Texto blanco */
+    text-align: center;
+}
+
+/* Estilos para los botones */
+.btn-primary,
+.btn-secondary {
+    background-color: #98DFD9; /* Fondo naranja para botones primarios */
+    border-color: #FFFFFF; /* Borde naranja para botones primarios */
+    color: #FFFFFF; /* Texto blanco para botones primarios */
+    margin: 5px; /* Espaciado entre botones */
+}
+
+/* Estilos personalizados para el botón de regreso */
+.btn-back {
+    margin-top: 20px; /* Espaciado superior para el botón de regreso */
+}
+
+/* Estilos personalizados para el botón "Salir" en la esquina superior derecha */
+.btn-logout {
+    position: absolute;
+    top: 10px; /* Ajusta la distancia desde la parte superior según tus preferencias */
+    right: 10px; /* Ajusta la distancia desde la derecha según tus preferencias */
+}

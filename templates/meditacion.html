@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_meditacion.css') }}">
+<head>
+    <title>Meditacion guiada de YUI</title>
+</head>
+<body>
+    <h1>Meditacion guiada de YUI</h1>
+    <p>Escoge entre las 5 meditaciones que te ofrece Yui.</p><p> Nota: Para realizar las meditaciones necesitas tener como mínimo 10 minutos libres.</p>
+
+    <div class="container">
+        <div class="video-container">
+            <p>Meditacion guiada arcoiris</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0Z5S9mvCv14" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-container">
+            <p>Momento para ti</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XcRYEFVV__A" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+        <div class="video-container">
+            <p>Bienestar y armonia</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tJ9VPRkNjBo" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-container">
+            <p>Imaginacion y tranquilidad</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GL-A8zaiUMY" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-container">
+            <p>Respiracion de la abeja</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UHKEmTdVOQM" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div>
+        <a href="/tecnicas" class="btn btn-primary return-button">Volver a Técnicas</a>
+    </div>  
+</body>
+</html>

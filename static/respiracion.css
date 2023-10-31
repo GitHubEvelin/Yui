@@ -1,0 +1,81 @@
+/* Estilos específicos para la página de respiración */
+body {
+    background: url('../static/images/respiracion.png') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #5B97A2;
+    color: #FFFFFF;
+    font-family: 'Comic Sans MS', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.breathing-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.breathing-instructions {
+    display: block;
+    margin-bottom: 20px;
+}
+
+#start-button {
+    display: block;
+    margin: 0 auto;
+}
+
+.breathing-animation-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #00bcd4; /* Cambia el color como desees */
+    /* Agrega la regla para ocultar la animación inicialmente */
+    transform: scale(0);
+    transition: transform 10s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.breathing-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+/* Agrega una clase para la animación */
+.breathing-animation {
+    /* Agrega el estilo de la animación */
+    transform: scale(1);
+}
+
+.breathing-animation .breathing-text {
+    display: block;
+}
+
+/* Agrega una regla para la contracción */
+.breathing-animation.reverse {
+    transform: scale(0);
+}
+
+.breathing-animation.reverse .breathing-text {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}

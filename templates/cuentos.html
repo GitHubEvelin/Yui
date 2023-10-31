@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuentos Relajantes de YUI</title>
+    <!-- Agrega aquí enlaces a hojas de estilo adicionales si es necesario -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='cuento.css') }}">
+</head>
+<body>
+    <div class="cuentos-container">
+        <h2>CUENTOS RELAJANTES DE YUI</h2>
+        <p>Escoge uno o más cuentos relajantes que te ofrezco. ¡Espero que sea de ayuda!</p>
+        <p>Nota: Si quieres leer otro cuento, solo da clic en el boton regresar a cuentos</p>
+        <div class="cuentos-buttons">
+            <div class="button-container">
+                <button class="button" id="cuento1">El Bosque de los Sueños</button>
+                <button class="button" id="cuento2">El Viaje del Osito Polar</button>
+                <button class="button" id="cuento3">La Estrella Perdida</button>
+                <button class="button" id="cuento4">El sueño del pececito</button>
+                <button class="button" id="cuento5">El bosque de las Luciérnagas</button>
+                <button class="button" id="cuento6">La aventura del gatito explorador</button>
+                <button class="button" id="cuento7">El misterio del unicornio perdido</button>
+                <button class="button" id="cuento8">El sol y la luna</button>
+                <button class="button" id="cuento9">El pequeño semillita</button>
+                <button class="button" id="cuento10">El león y la mariposa</button>
+                <button class="button" id="cuento11">El sueño de estela</button>
+                <button class="button" id="cuento12">El árbol de los deseos</button>
+                <button class="button" id="cuento13">El ángel de la noche</button>
+                <button class="button" id="cuento14">Las aventuras de Roco el Pingüino</button>
+                <button class="button" id="cuento15">El regalo de la luz de la Luna</button>
+                <button class="button" id="cuento16">El árbol de las palabras mágicas</button>
+                <button class="button" id="cuento17">El lago de los deseos</button>
+                <button class="button" id="cuento18">Las Huellas de la montaña</button>
+                <button class="button" id="cuento19">El río de las emociones</button>
+                <button class="button" id="cuento20">La cometa y el viento</button>
+            </div>
+        </div>
+        <div class="cuento-display" id="cuento-display">
+            <!-- Aquí se mostrará el cuento seleccionado -->
+        </div>
+        <button class="btn btn-primary" id="regresar">Regresar a cuentos</button>
+    </div>
+
+    <div>
+        <a href="/tecnicas" class="btn btn-primary return-button">Volver a Técnicas</a>
+    </div>  
+
+    <script src="{{ url_for('static', filename='cuentos.js') }}"></script>
+</body>
+</html>
+

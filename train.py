@@ -2,6 +2,7 @@ import numpy as np
 import random
 import json
 
+
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
@@ -29,7 +30,7 @@ for intent in intents['intents']:
         xy.append((w, tag))
 
 # stem and lower each word
-ignore_words = ['?', '.', '!']
+ignore_words = ['?', '.', '!','¿','á' ,'é', 'í', 'ó', 'ú']
 all_words = [stem(w) for w in all_words if w not in ignore_words]
 # remove duplicates and sort
 all_words = sorted(set(all_words))
@@ -55,10 +56,10 @@ y_train = np.array(y_train)
 
 # Hyper-parameters 
 num_epochs = 1000
-batch_size = 8
+batch_size = 15
 learning_rate = 0.001
 input_size = len(X_train[0])
-hidden_size = 8
+hidden_size = 15
 output_size = len(tags)
 print(input_size, output_size)
 

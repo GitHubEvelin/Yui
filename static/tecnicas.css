@@ -1,0 +1,38 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    background: url('../static/images/tecnicas.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #FFFFFF;
+}
+/* Estilos para botones primarios y secundarios */
+.btn-primary,
+.btn-secondary {
+    background-color: #9B51FD; /* Fondo naranja para botones */
+    border-color: #481E81; /* Borde naranja para botones */
+    color: #FFFFFF; /* Texto blanco para botones */
+    margin: 5px; /* Espaciado entre botones */
+}
+
+/* Estilos personalizados para el botón "Salir" en la esquina superior derecha */
+.btn-salir {
+    position: absolute;
+    top: 10px; /* Ajusta la distancia desde la parte superior según tus preferencias */
+    right: 10px; /* Ajusta la distancia desde la derecha según tus preferencias */
+}
+
+h1 {
+    color: #FFFFFF; /* Texto blanco */
+    font-family: Lucida Console, Monospace; /* Reemplaza 'FuenteDeseada' con la fuente que desees utilizar */
+    font-size: 36px; /* Tamaño de fuente */
+    text-transform: uppercase; /* Convierte el texto en mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.return-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

@@ -1,0 +1,52 @@
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background: url('../static/images/cuentos.png') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #F3E2F1;
+    text-align: center;
+}
+
+/* Estilo para los botones */
+.button-container {
+    display: flex;
+    flex-wrap: wrap; /* Envuelve los botones en filas */
+    justify-content: center; /* Centra los botones horizontalmente */
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 10px; /* Espacio entre los botones (reducido) */
+    font-size: 16px; /* Tamaño de fuente de los botones */
+    background-color: #FF8D8E; /* Color de fondo de los botones */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Estilo para el cuadro de texto donde se muestra el cuento */
+#cuento-display {
+    text-align: left; /* Alinea el texto del cuento a la izquierda */
+    font-size: 18px; /* Tamaño de fuente del cuento */
+    margin: 20px; /* Espacio alrededor del cuadro de texto */
+}
+
+.return-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+        /* Estilos para los botones */
+        .btn-primary {
+            background-color: #85DFFC; /* Fondo naranja para botones primarios */
+            border-color: #5A7CFA; /* Borde naranja para botones primarios */
+            color: #FFFFFF; /* Texto blanco para botones primarios */
+            margin: 5px; /* Espaciado entre botones */
+            text-decoration: none; /* Para quitar la decoración de enlace en el botón */
+            padding: 10px 20px; /* Agregar relleno para hacer el botón más grande */
+            border: 2px solid #5A7CFA; /* Borde más visible para el botón */
+            border-radius: 5px; /* Bordes redondeados para el botón */
+            display: inline-block; /* Hacer que el botón se comporte como un bloque en línea */
+        }

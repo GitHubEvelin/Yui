@@ -1,0 +1,77 @@
+/* Estilos personalizados para la página de administración de usuarios */
+
+/* Alinea el contenido horizontalmente */
+body {
+    background-color: #5B97A2; /* Fondo morado */
+    color: #FFFFFF; /* Texto blanco */
+    text-align: center;
+}
+
+/* Establece un ancho máximo para el contenido y centra horizontalmente */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para la tabla */
+.table {
+    background-color: #F1E4F9; /* Fondo amarillo para la tabla */
+    margin: 0 auto; /* Centra la tabla horizontalmente */
+}
+
+.table th {
+    background-color: #98DFD9; /* Fondo verde para las celdas de encabezado */
+    color: #FFFFFF; /* Texto blanco en las celdas de encabezado */
+}
+
+/* Estilos para los botones */
+.btn-primary,
+.btn-danger,
+.btn-success,
+.btn-secondary {
+    background-color: #FF8D8E; /* Fondo naranja para botones primarios */
+    border-color: #FD66BC; /* Borde naranja para botones primarios */
+    color: #FFFFFF; /* Texto blanco para botones primarios */
+    margin: 5px; /* Espaciado entre botones */
+}
+
+/* Estilos en hover para botones */
+.btn-primary:hover,
+.btn-danger:hover,
+.btn-success:hover,
+.btn-secondary:hover {
+    background-color: #FDFAD9; /* Fondo amarillo en hover para botones */
+    border-color: #FDFAD9; /* Borde amarillo en hover para botones */
+    color: #5B97A2; /* Texto morado en hover para botones */
+}
+
+/* Estilos para el formulario de edición */
+form {
+    display: inline; /* Alinea el formulario en línea */
+}
+
+/* Estilos para los botones de edición y eliminación en la tabla */
+.table .btn-primary,
+.table .btn-danger {
+    padding: 5px 10px; /* Espaciado interno en los botones de la tabla */
+}
+
+/* Estilos para el botón de agregar usuario */
+.btn-success {
+    margin-top: 20px; /* Margen superior para separar el botón de la tabla */
+}
+
+/* Estilos para el botón de Logout */
+.btn-secondary {
+    margin-top: 20px; /* Margen superior para separar el botón de la tabla */
+}
+
+.custom-header {
+    font-size: 24px; /* Tamaño de fuente atractivo */
+    font-weight: bold; /* Texto en negrita */
+    margin: 20px 0; /* Margen superior e inferior para separar el encabezado de la tabla */
+    text-align: center; /* Centra horizontalmente */
+    display: block; /* Hace que el encabezado sea un bloque */
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }

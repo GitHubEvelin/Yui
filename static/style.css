@@ -8,7 +8,12 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     font-size: 100%;
-    background: #F1F1F1;
+    background: url('../static/images/chat.png'); /* Ruta a la imagen en la carpeta "images" dentro de "static" */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #5B97A2;
+    color: #FFFFFF;
 }
 
 *, html {
@@ -28,7 +33,7 @@ body {
 }
 
 /* CONTENT IS CLOSE */
-.chatbox__support {
+.chatbox__support{
     display: flex;
     flex-direction: column;
     background: #eee;
@@ -139,7 +144,7 @@ body {
 
 .messages__item {
     margin-top: 10px;
-    background: #E0E0E0;
+    background: #ff35ffb2;
     padding: 8px 12px;
     max-width: 70%;
 }
@@ -198,3 +203,24 @@ body {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
+
+.btn-tecnicas {
+    position: absolute;
+    left: 20%; /* Ajusta la posición horizontal como desees */
+    top: 50%; /* Ajusta la posición vertical como desees */
+    transform: translate(-50%, -50%); /* Centra verticalmente y horizontalmente */
+}
+
+.btn-primary{
+    background-color: #9B51FD; /* Fondo naranja para botones primarios */
+    border-color: #481E81; /* Borde naranja para botones primarios */
+    color: #FFFFFF; /* Texto blanco para botones primarios */
+    margin: 5px; /* Espaciado entre botones */
+}
+
+.return-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
