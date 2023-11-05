@@ -1,32 +1,11 @@
 from flask import Flask, render_template, request, jsonify, redirect, url_for, flash
-from models.ModelUser import ModelUser
-from datetime import datetime  # Importa el módulo datetime
-from flask_login import current_user, LoginManager, login_user, logout_user, login_required
-from flask_mysqldb import MySQL
-from config import config
-import logging
-from models.entities.User import User
 
 
 from chat import get_response
 
 
 app = Flask(__name__)
-db = MySQL(app)
 
-# Configura MySQL con el nivel de depuración deseado
-app.config['MYSQL_DATABASE_DEBUG'] = True  # Activa el modo de depuración
-
-
-app.config['SECRET_KEY'] = 'B!1w8NAt1T^%kvhUI*S^'
-app.logger.setLevel(logging.DEBUG) 
-
-# Crea una instancia de LoginManager y configúrala en tu aplicación
-login_manager = LoginManager(app)
-
-@login_manager.user_loader
-def load_user(id):
-    return ModelUser.get_by_id(db, id)
 
 @app.get("/")
 def index_get():
@@ -70,4 +49,4 @@ def chatbot():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5001)  
+    app.run(debug=True, port=5000)  
