@@ -1,11 +1,9 @@
-from flask import Flask, render_template, request, jsonify, redirect, url_for, flash
+from flask import Flask, render_template, request, jsonify, redirect, url_for
 
 
 from chat import get_response
 
-
 app = Flask(__name__)
-
 
 @app.get("/")
 def index_get():
@@ -45,8 +43,10 @@ def meditacion():
 
 @app.route('/chatbot')
 def chatbot():
-    return render_template('base.html')  
+    # Código para mostrar la página de meditación o realizar otras acciones
+    return render_template('base.html')  # Reemplaza 'meditacion.html' con el nombre de tu plantilla
 
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)  
+
