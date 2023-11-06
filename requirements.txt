@@ -5,6 +5,7 @@ colorama==0.4.6
 filelock==3.11.0
 Flask==2.2.3
 Flask-Cors==3.0.10
+gunicorn==21.2.0
 idna
 itsdangerous
 Jinja2
