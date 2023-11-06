@@ -1,8 +1,8 @@
 from flask import Flask, render_template, request, jsonify
 from chat import get_response
 
-def create_app():
-    app = Flask(__name)
+def create_app(import_name=__name__, static_url_path='/static'):
+    app = Flask(import_name, static_url_path=static_url_path)
 
     @app.get("/")
     def index_get():
