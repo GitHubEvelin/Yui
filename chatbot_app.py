@@ -1,9 +1,7 @@
-from flask import Flask, render_template, request, jsonify, redirect, url_for
-
-
+from flask import Flask, render_template, request, jsonify
 from chat import get_response
 
-app = Flask(__name__)
+app = Flask(__name)
 
 @app.get("/")
 def index_get():
@@ -28,25 +26,28 @@ def diario():
 
 @app.route('/respiracion')
 def respiracion():
-    # Código para mostrar la página 'diario.html' o realizar otras acciones
+    # Código para mostrar la página 'respiracion.html' o realizar otras acciones
     return render_template('respiracion.html')
 
 @app.route('/cuentos')
 def cuentos():
-    # Código para mostrar la página 'diario.html' o realizar otras acciones
+    # Código para mostrar la página 'cuentos.html' o realizar otras acciones
     return render_template('cuentos.html')
 
 @app.route('/meditacion')
 def meditacion():
-    # Código para mostrar la página de meditación o realizar otras acciones
-    return render_template('meditacion.html')  # Reemplaza 'meditacion.html' con el nombre de tu plantilla
+    # Código para mostrar la página 'meditacion.html' o realizar otras acciones
+    return render_template('meditacion.html')
 
 @app.route('/chatbot')
 def chatbot():
-    # Código para mostrar la página de meditación o realizar otras acciones
-    return render_template('base.html')  # Reemplaza 'meditacion.html' con el nombre de tu plantilla
-
+    # Código para mostrar la página 'base.html' o realizar otras acciones
+    return render_template('base.html')
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)  
+    from gunicorn.app.wsgiapp import WSGIApplication
+    app_wsgi = WSGIApplication()
+    app_wsgi.app_uri = "chatbot_app:app"
+    app_wsgi.run()
+
 
